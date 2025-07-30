@@ -8,4 +8,4 @@ export const btnForm = document.getElementById('btn__form')
 export const btnReset = document.getElementById('btn__reset')
 // result
 export const resultContainer = document.querySelector('.result__container')
-export const number = document.querySelectorAll('.animation-number')
+export const number = document.querySelectorAll('.result__animation')
