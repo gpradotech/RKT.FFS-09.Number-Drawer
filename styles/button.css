@@ -11,6 +11,7 @@ BUTTON ------------------------------------------------
   padding: 16px;
   color: var(--color-content-primary);
   font: var(--font-label-medium);
+  font-size: clamp(var(--fs-200), 5vw,var(--fs-400));
   text-transform: uppercase;
   cursor: pointer;
   width: 100%;
@@ -31,4 +32,27 @@ BUTTON ------------------------------------------------
   background-image:
     linear-gradient(var(--color-background-primary), var(--color-background-primary)), /* fundo real do botão */
     var(--color-gradient-border);
+}
+
+#btn__form:hover svg {
+  animation: moveLooping 1s ease infinite;
+}
+
+#btn__reset:hover svg {
+  animation: rotateLooping 2s ease infinite;
+}
+
+@keyframes moveLooping {
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes rotateLooping {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
