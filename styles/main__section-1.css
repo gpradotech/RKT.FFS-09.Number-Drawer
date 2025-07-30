@@ -1,0 +1,26 @@
+/*//////////////////////////////////////////////////////////
+SECTION 1 --------------------------------------------------
+//////////////////////////////////////////////////////////*/
+.main__section-1 {
+  width: 100%;
+  max-width: 508px;
+  display: grid;
+  gap: 32px;
+  grid-area: section;
+}
+
+.section-1__content {
+  display: flex;
+  gap: 8px;
+  max-width: 386px;
+}
+
+.section-1__content svg {
+  min-width: 20px;
+  width: 20px;
+}
+
+.section-1__subtitle {
+  font: var(--font-body-medium);
+  color: var(--color-content-brand)
+}

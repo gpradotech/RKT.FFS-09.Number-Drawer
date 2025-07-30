@@ -1,0 +1,21 @@
+/*//////////////////////////////////////////////////////////
+SECTION 3 --------------------------------------------------
+//////////////////////////////////////////////////////////*/
+.main__section-3 {
+color: var(--color-content-primary);
+display: grid;
+gap: 40px;
+align-items: center;
+text-align: center;
+}
+
+.main__section-3 header {
+  display: grid;
+  gap: 4px;
+}
+
+.main__section-3 .counter {
+  font: var(--font-overline);
+  text-transform: uppercase;
+  color: var(--color-content-secondary);
+}

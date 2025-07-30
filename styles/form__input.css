@@ -1,0 +1,33 @@
+/*//////////////////////////////////////////////////////////
+INPUT ------------------------------------------------------
+//////////////////////////////////////////////////////////*/
+input[type="number"] {
+  -moz-appearance: textfield; /* remove o spinner no Firefox */
+  width: 100%;
+  padding: 8px 4px;
+  background: var(--color-background-secondary);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font: var(--font-display-small);
+  font-size: clamp(var(--fs-300), 5vw, var(--fs-500));
+  color: var(--color-content-primary);
+  text-align: center;
+  appearance: none;
+  min-height: 48px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none; /* remove aparência nativa */
+margin: 0; /* remove espaço extra */
+}
+
+input[type="number"]:focus {
+  border: 2px solid transparent;
+  background-image:
+  linear-gradient(var(--color-background-tertiary), var(--color-background-tertiary)), /* fundo real do botão */
+  var(--color-gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: transparent;
+}

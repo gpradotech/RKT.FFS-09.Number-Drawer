@@ -1,0 +1,30 @@
+/*//////////////////////////////////////////////////////////
+HEADER -----------------------------------------------------
+//////////////////////////////////////////////////////////*/
+.main__header {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 508px;
+  grid-area: header;
+}
+
+.main__header-tagline {
+  font: var(--font-overline);
+  text-transform: uppercase;
+  background-image: var(--color-gradient-content);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--color-content-primary);
+}
+
+.main__header-heading {
+  font: var(--font-display-large);
+  text-transform: uppercase;
+  font-size: clamp(var(--fs-400), 5vw, var(--fs-700));
+  margin-bottom: 32px;
+  color: var(--color-content-primary);
+  white-space: nowrap;
+  max-width: 100%;
+}

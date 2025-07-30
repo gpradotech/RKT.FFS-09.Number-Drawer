@@ -1,13 +1,9 @@
 /*//////////////////////////////////////////////////////////
-FORM -----------------------------------------------------
+FORM -------------------------------------------------------
 //////////////////////////////////////////////////////////*/
 form {
   display: grid;
   gap: 20px;
-}
-
-label {
-  color: var(--color-content-secondary);
 }
 
 .form__fields {
@@ -22,130 +18,4 @@ label {
   display: grid;
   gap: 8px;
   width: 100%;
-  /* max-width: 5.375rem; */
-}
-
-.input-wrapper label {
-  font: var(--font-label-medium);
-  font-size: clamp(var(--fs-100), 5vw, var(--fs-400));
-  text-transform: uppercase;
-  width: 100%;
-}
-
-/*//////////////////////////////////////////////////////////
-INPUT ------------------------------------------------------
-//////////////////////////////////////////////////////////*/
-
-input[type="number"] {
-  width: 100%;
-  padding: 8px 4px;
-  background: var(--color-background-secondary);
-  border: 2px solid transparent;
-  border-radius: 8px;
-  font: var(--font-display-small);
-  font-size: clamp(var(--fs-300), 5vw, var(--fs-500));
-  color: var(--color-content-primary);
-  text-align: center;
-  appearance: none;
-  min-height: 48px;
-}
-
-input[type="number"]:focus {
-  border: 2px solid transparent;
-  background-image:
-  linear-gradient(var(--color-background-tertiary), var(--color-background-tertiary)), /* fundo real do botão */
-  var(--color-gradient-border);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  outline: transparent;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
--webkit-appearance: none; /* remove aparência nativa */
-margin: 0; /* remove espaço extra */
-}
-
-input[type="number"] {
--moz-appearance: textfield; /* remove o spinner no Firefox */
-}
-
-/*//////////////////////////////////////////////////////////
-TOGGLE -----------------------------------------------------
-//////////////////////////////////////////////////////////*/
-
-.form__toggle {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-/* Oculta o checkbox, mantendo-o acessível */
-.form__toggle input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-/* Label visual como toggle */
-.form__toggle label {
-  position: relative;
-  padding-left: 52px; /* espaço para o botão */
-  cursor: pointer;
-  user-select: none;
-  font: var(--font-label-small);
-}
-
-/* Estilo do botão toggle */
-.form__toggle label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 44px;
-  height: 24px;
-  background: linear-gradient(90deg , var(--color-content-tertiary), var(--color-content-tertiary));
-  border-radius: 999px;
-  transition: all 0.3s ease;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-/* Bolinha */
-.form__toggle label::after {
-  content: "";
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s;
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.06));
-}
-
-/* Quando o checkbox está marcado */
-.form__toggle input[type="checkbox"]:checked + label::before {
-  background: var(--color-gradient-background);
-}
-
-.form__toggle input[type="checkbox"]:checked + label::after {
-  transform: translate(20px, -50%);
-}
-
-.form__toggle input[type="checkbox"]:checked:hover + label::after {
-  transform: translate(17px, -50%);
-}
-
-.form__toggle input[type="checkbox"]:hover + label::after {
-  transform: translate(3px, -50%);
-}
-
-.form__toggle input[type="checkbox"]:focus-visible + label::before {
-  outline: 2px solid #3399FF;
-  outline-offset: 2px;
 }

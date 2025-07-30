@@ -1,0 +1,78 @@
+/*//////////////////////////////////////////////////////////
+TOGGLE BUTTON ----------------------------------------------
+//////////////////////////////////////////////////////////*/
+.form__toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Oculta o checkbox, mantendo-o acessível */
+.form__toggle input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Label visual como toggle */
+.form__toggle label {
+  position: relative;
+  padding-left: 52px;
+  cursor: pointer;
+  user-select: none;
+  font: var(--font-label-small);
+}
+
+/* Estilo do botão toggle */
+.form__toggle label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 24px;
+  background: linear-gradient(90deg , var(--color-content-tertiary), var(--color-content-tertiary));
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Bolinha */
+.form__toggle label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.06));
+}
+
+/* Quando o checkbox está marcado */
+.form__toggle input[type="checkbox"]:checked + label::before {
+  background: var(--color-gradient-background);
+}
+
+.form__toggle input[type="checkbox"]:checked + label::after {
+  transform: translate(20px, -50%);
+}
+
+.form__toggle input[type="checkbox"]:checked:hover + label::after {
+  transform: translate(17px, -50%);
+}
+
+.form__toggle input[type="checkbox"]:hover + label::after {
+  transform: translate(3px, -50%);
+}
+
+.form__toggle input[type="checkbox"]:focus-visible + label::before {
+  outline: 2px solid #3399FF;
+  outline-offset: 2px;
+}

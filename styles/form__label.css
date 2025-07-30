@@ -1,0 +1,13 @@
+/*//////////////////////////////////////////////////////////
+LABEL ------------------------------------------------------
+//////////////////////////////////////////////////////////*/
+label {
+  color: var(--color-content-secondary);
+}
+
+.input-wrapper label {
+  font: var(--font-label-medium);
+  font-size: clamp(var(--fs-100), 5vw, var(--fs-400));
+  text-transform: uppercase;
+  width: 100%;
+}

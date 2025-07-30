@@ -1,0 +1,71 @@
+/*//////////////////////////////////////////////////////////
+GLOBAL ----------------------------------------------------
+//////////////////////////////////////////////////////////*/
+body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 22.66%, rgba(0, 0, 0, 0.54) 100%) no-repeat, url("./../img/decorative/bg__shapes.png") 0% 0% / 120px 120px repeat, black;
+}
+
+:focus-visible {
+  outline: 2px solid #3399FF;
+  outline-offset: 4px;
+}
+
+#app {
+  width: 100vw;
+  max-width: 1098px;
+  margin: clamp(46px, 5vw, 78px) auto 0;
+  padding-inline: 32px;
+  padding-bottom: 80px;
+  display: grid;
+  gap: 90px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app__main {
+  width: 100%;
+  max-width: 1098px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "header aside"
+  "section aside";
+  gap: 100px;
+}
+
+.heading {
+  color: var(--color-content-primary);
+  font: var(--font-label-medium);
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font: var(--font-body-small);
+  color: var(--color-content-secondary);
+}
+
+aside {
+  grid-area: aside;
+}
+
+aside.hidden {
+  display: none;
+}
+
+@media (max-width: 1109px) {
+  .app__header {
+    justify-content: center;
+  }
+
+  .app__main {
+  grid-template-areas:
+  "header "
+  "aside"
+  "section";
+  gap: 48px;
+  justify-content: center;
+  }
+}

@@ -1,5 +1,5 @@
 /*//////////////////////////////////////////////////////////
-BUTTON -----------------------------------------------------
+BUTTON ------------------------------------------------
 //////////////////////////////////////////////////////////*/
 .btn {
   border-radius: 8px;
@@ -25,4 +25,10 @@ BUTTON -----------------------------------------------------
     var(--color-gradient-border);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+}
+
+.btn:active {
+  background-image:
+    linear-gradient(var(--color-background-primary), var(--color-background-primary)), /* fundo real do botão */
+    var(--color-gradient-border);
 }

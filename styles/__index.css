@@ -1,0 +1,19 @@
+/*//////////////////////////////////////////////////////////
+INDEX ------------------------------------------------------
+//////////////////////////////////////////////////////////*/
+@import url(_variables.css);
+@import url(_reset.css);
+@import url(_global.css);
+
+@import url(main__header.css);
+@import url(main__section-1.css);
+@import url(main__section-2.css);
+@import url(main__section-3.css);
+
+@import url(form.css);
+@import url(form__label.css);
+@import url(form__input.css);
+@import url(form__toggle-button.css);
+
+@import url(button.css);
+@import url(result.css);
