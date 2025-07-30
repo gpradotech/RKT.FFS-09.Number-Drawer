@@ -73,7 +73,7 @@
         </div>
       </section>
       <!-- SECTION 2 -> TELA 1 -->
-      <aside class="main__section-2 hidden">
+      <aside class="main__section-2  ">
         <div class="section-2__container">
           <div class="section-2__text">
             <h2 class="heading">Quero sortear</h2>
@@ -86,23 +86,23 @@
             <div class="form__fields">
               <!-- input números -->
               <div class="input-wrapper">
-                <label for="quantity">Números</label>
-                <input type="number" name="quantity" id="quantity" min="1" max="15">
+                <label for="input__quantity">Números</label>
+                <input type="number" name="quantity" id="input__quantity" min="1" max="15">
               </div>
               <!-- input min -->
               <div class="input-wrapper">
-                <label for="min">De</label>
-                <input type="number" name="min" id="min" min="1" max="100">
+                <label for="input__min">De</label>
+                <input type="number" name="min" id="input__min" min="1" max="100">
               </div>
               <!-- input max -->
               <div class="input-wrapper">
-                <label for="max">Até</label>
-                <input type="number" name="max" id="max" min="1" max="100">
+                <label for="input__max">Até</label>
+                <input type="number" name="max" id="input__max" min="1" max="100">
               </div>
             </div>
             <div class="form__toggle">
-              <input type="checkbox" name="toggle" id="toggle">
-              <label for="toggle">Não repetir número</label>
+              <input type="checkbox" name="toggle" id="input__toggle">
+              <label for="input__toggle">Não repetir número</label>
             </div>
           </form>
 
@@ -116,15 +116,15 @@
         </div>
       </aside>
       <!-- SECTION 3 -> TELA 2 -->
-      <aside class="main__section-3 ">
+      <aside class="main__section-3 hidden">
         <header>
           <h2 class="heading">Resultado do sorteio</h2>
           <p class="counter">1º resultado</p>
         </header>
         <section class="result__container">
-          <div class="animation-number show">
-            <span class="number">22</span>
-            <div class="box"></div>
+          <div class="result__animation show">
+            <span class="result__number">22</span>
+            <div class="result__box"></div>
           </div>
         </section>
         <button class="btn" id="btn__reset">
@@ -138,6 +138,6 @@
     </main>
   </div>
   
-  <script type="module" src="./scripts/_index.js"></script>
+  <script type="module" src="./scripts/__index.js"></script>
 </body>
 </html>

@@ -8,17 +8,17 @@ RESULT -----------------------------------------------------
   gap: 24px;
 }
 
-.animation-number {
+.result__animation {
   display: none;
 }
 
-.animation-number.show {
+.result__animation.show {
   position: relative;
   width: fit-content;
   display: block;
 }
 
-.animation-number.show .number {
+.result__animation.show .result__number {
   font: var(--font-overline);
   font-size: 3rem;
   color: var(--color-content-brand);
@@ -27,7 +27,7 @@ RESULT -----------------------------------------------------
   animation: showNumber 2s ease forwards;
 }
 
-.animation-number.show .box {
+.result__animation.show .result__box {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
