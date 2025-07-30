@@ -109,6 +109,8 @@ TOGGLE -----------------------------------------------------
   background: linear-gradient(90deg , var(--color-content-tertiary), var(--color-content-tertiary));
   border-radius: 999px;
   transition: all 0.3s ease;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 /* Bolinha */
@@ -141,4 +143,9 @@ TOGGLE -----------------------------------------------------
 
 .form__toggle input[type="checkbox"]:hover + label::after {
   transform: translate(3px, -50%);
+}
+
+.form__toggle input[type="checkbox"]:focus-visible + label::before {
+  outline: 2px solid #3399FF;
+  outline-offset: 2px;
 }
