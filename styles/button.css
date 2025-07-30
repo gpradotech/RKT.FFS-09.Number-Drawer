@@ -1,0 +1,16 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background-tertiary);
+  padding: 16px;
+  color: var(--color-content-primary);
+  font: var(--font-label-medium);
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 40px;
+}

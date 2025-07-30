@@ -1,3 +1,132 @@
 /*//////////////////////////////////////////////////////////
 GLOBAL ----------------------------------------------------
 //////////////////////////////////////////////////////////*/
+body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 22.66%, rgba(0, 0, 0, 0.54) 100%) no-repeat, url("./../img/decorative/bg__shapes.png") 0% 0% / 120px 120px repeat, black;
+}
+
+#app {
+  width: 100vw;
+  max-width: 1098px;
+  margin: clamp(46px, 5vw, 78px) auto 0;
+  padding-inline: 32px;
+  padding-bottom: 80px;
+}
+
+.app__screen-1 {
+  display: grid;
+  gap: 90px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.app__main {
+  width: 100%;
+  max-width: 1098px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "header aside"
+  "section aside";
+  gap: 100px;
+}
+
+.main__header {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 508px;
+  grid-area: header;
+}
+
+.main__tagline {
+  font: var(--font-overline);
+  text-transform: uppercase;
+  background-image: var(--color-gradient-content);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--color-content-primary);
+}
+
+.main__heading {
+  font: var(--font-display-large);
+  text-transform: uppercase;
+  font-size: clamp(var(--fs-400), 5vw, var(--fs-700));
+  margin-bottom: 32px;
+  color: var(--color-content-primary);
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.main__section-1 {
+  width: 100%;
+  max-width: 508px;
+  display: grid;
+  gap: 32px;
+  grid-area: section;
+}
+
+.section-1__content {
+  display: flex;
+  gap: 8px;
+  max-width: 386px;
+
+  & svg {
+    min-width: 20px;
+    width: 20px;
+  }
+}
+
+.subtitle {
+  font: var(--font-body-medium);
+  color: var(--color-content-brand)
+}
+
+.paragraph {
+  font: var(--font-body-small);
+  color: var(--color-content-secondary);
+}
+
+.main__section-2 {
+  grid-area: aside;
+  display: grid;
+  align-items: center;
+}
+
+.section-2__container {
+  display: grid;
+  gap: 40px;
+}
+
+.section-2__text {
+  max-width: 400px;
+}
+
+.heading {
+  color: var(--color-content-primary);
+  font: var(--font-label-medium);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1109px) {
+  .app__header {
+    justify-content: center;
+  }
+  
+  .app__main {
+  grid-template-areas:
+  "header "
+  "aside"
+  "section";
+  gap: 48px;
+  justify-content: center;
+  }
+
+  .main__heading {
+    margin-bottom: 0;
+  }
+}
