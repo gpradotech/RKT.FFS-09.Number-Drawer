@@ -1,5 +1,5 @@
 <!-- title page -->
-<h1 align="center"> Sorteador de números</h1>
+<h1 align="center"> Sorteador de Números</h1>
 
 <!-- nav -->
 <p align="center">
