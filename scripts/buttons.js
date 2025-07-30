@@ -19,9 +19,9 @@ export function f_BtnFormPressed() {
   component.btnForm.addEventListener('click', (event) => {
     event.preventDefault();
 
+    // Soma 1 ao número total de tentativas bem sucedidas
     results +=1
     component.resultCounter.textContent = `${results}º resultado`
-
 
     // Atualiza os valores na hora do clique
     maxValue = Number(component.inputMax.value);
@@ -34,16 +34,18 @@ export function f_BtnFormPressed() {
       isNaN(minValue) ||
       isNaN(maxValue) ||
       isNaN(quantityValue) ||
-      minValue >= maxValue ||
+      minValue > maxValue ||
       quantityValue <= 0
     ) {
       alert("Preencha todos os campos corretamente.");
+      results -=1
       return;
     }
 
     const intervaloDisponivel = maxValue - minValue + 1;
     if (toggleStatus && quantityValue > intervaloDisponivel) {
       alert(`Não é possível sortear ${quantityValue} números únicos entre ${minValue} e ${maxValue}.`);
+      results -=1
       return;
     }
 
