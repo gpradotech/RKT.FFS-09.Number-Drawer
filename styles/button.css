@@ -16,15 +16,13 @@ BUTTON -----------------------------------------------------
   width: 100%;
   margin-bottom: 40px;
   border: 2px solid transparent;
-
-  transition: background-image .4s;
 }
 
 .btn:hover {
   border: 2px solid transparent;
   background-image:
-  linear-gradient(var(--color-background-secondary), var(--color-background-secondary)), /* fundo real do botão */
-  var(--color-gradient-border);
+    linear-gradient(var(--color-background-secondary), var(--color-background-secondary)), /* fundo real do botão */
+    var(--color-gradient-border);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
