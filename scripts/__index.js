@@ -1,3 +1,2 @@
 import * as component from './_components.js'
-
-console.log(component.resultContainer)
+import { f_InputQuantity, f_InputMin, f_InputMax } from './inputs.js'
