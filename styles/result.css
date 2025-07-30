@@ -6,6 +6,7 @@ RESULT -----------------------------------------------------
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  max-width: 400px;
 }
 
 .result__animation {
@@ -38,6 +39,8 @@ RESULT -----------------------------------------------------
   bottom: 0;
   z-index: -10;
   right: -13%;
+
+  mix-blend-mode: screen;
 
   animation: rotateBox 2s ease forwards;
 }
