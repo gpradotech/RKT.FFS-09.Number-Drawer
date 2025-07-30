@@ -12,6 +12,7 @@ form {
   max-width: 100%;
   text-align: center;
   gap: 12px;
+  border: none;
 }
 
 .input-wrapper {
