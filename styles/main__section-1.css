@@ -3,16 +3,16 @@ SECTION 1 --------------------------------------------------
 //////////////////////////////////////////////////////////*/
 .main__section-1 {
   width: 100%;
-  max-width: 508px;
+  max-width: 31.75rem;
   display: grid;
-  gap: 32px;
+  gap: 2rem;
   grid-area: section;
 }
 
 .section-1__content {
   display: flex;
-  gap: 8px;
-  max-width: 386px;
+  gap: 0.5rem;
+  max-width: 24.125rem;
 }
 
 .section-1__content svg {

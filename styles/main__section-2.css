@@ -8,9 +8,9 @@ SECTION 2 --------------------------------------------------
 
 .section-2__container {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .section-2__text {
-  max-width: 400px;
+  max-width: 25rem;
 }

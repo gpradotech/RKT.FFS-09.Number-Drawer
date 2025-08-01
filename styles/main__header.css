@@ -3,9 +3,9 @@ HEADER -----------------------------------------------------
 //////////////////////////////////////////////////////////*/
 .main__header {
   display: grid;
-  gap: 12px;
+  gap: 0.75rem;
   width: 100%;
-  max-width: 508px;
+  max-width: 31.75rem;
   grid-area: header;
 }
 
@@ -22,9 +22,11 @@ HEADER -----------------------------------------------------
 .main__header-heading {
   font: var(--font-display-large);
   text-transform: uppercase;
-  font-size: clamp(var(--fs-400), 5vw, var(--fs-700));
-  margin-bottom: 32px;
+  font-size: clamp(var(--fs-500), 5vw, var(--fs-700));
+  margin-bottom: 2rem;
   color: var(--color-content-primary);
   white-space: nowrap;
+  word-break: break-word;
   max-width: 100%;
+  /* margin-right: 1.5rem; */
 }

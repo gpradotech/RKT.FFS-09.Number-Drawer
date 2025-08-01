@@ -3,12 +3,13 @@ BUTTON ------------------------------------------------
 //////////////////////////////////////////////////////////*/
 .btn {
   border-radius: 8px;
+  letter-spacing: .1rem;
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
   justify-content: center;
   background: var(--color-background-tertiary);
-  padding: 16px;
+  padding: 16px 1rem;
   color: var(--color-content-primary);
   font: var(--font-label-medium);
   font-size: clamp(var(--fs-200), 5vw,var(--fs-400));
@@ -16,11 +17,11 @@ BUTTON ------------------------------------------------
   cursor: pointer;
   width: 100%;
   margin-bottom: 40px;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
 }
 
 .btn:hover {
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   background-image:
     linear-gradient(var(--color-background-secondary), var(--color-background-secondary)), /* fundo real do botão */
     var(--color-gradient-border);

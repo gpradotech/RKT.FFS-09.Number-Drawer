@@ -2,12 +2,12 @@
 GLOBAL ----------------------------------------------------
 //////////////////////////////////////////////////////////*/
 body {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 22.66%, rgba(0, 0, 0, 0.54) 100%) no-repeat, url("./../img/decorative/bg__shapes.png") 0% 0% / 120px 120px repeat, black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 22.66%, rgba(0, 0, 0, 0.54) 100%) repeat, url("./../img/decorative/bg__shapes.png") 0% 0% / 120px 120px repeat, black;
 }
 
 :focus-visible {
-  outline: 2px solid #3399FF;
-  outline-offset: 4px;
+  outline: 0.125rem solid #3399FF;
+  outline-offset: 0.25rem;
 }
 
 .sr-only {
@@ -25,9 +25,9 @@ body {
 
 #app {
   width: 100vw;
-  max-width: 1098px;
+  max-width: 68.625rem;
   margin: clamp(46px, 5vw, 78px) auto 0;
-  padding-inline: 32px;
+  padding-inline: 2rem;
   padding-bottom: 80px;
   display: grid;
   gap: 90px;
@@ -40,13 +40,13 @@ body {
 
 .app__main {
   width: 100%;
-  max-width: 1098px;
+  max-width: 68.625rem;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
   "header aside"
   "section aside";
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .heading {
@@ -68,7 +68,7 @@ aside.hidden {
   display: none;
 }
 
-@media (max-width: 1109px) {
+@media (max-width: 69.3125rem) {
   .app__header {
     justify-content: center;
   }
